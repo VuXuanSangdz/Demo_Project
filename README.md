@@ -7,6 +7,16 @@ Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận Đố
 
 **Repository:** [github.com/VuXuanSangdz/Demo_Project](https://github.com/VuXuanSangdz/Demo_Project)
 
+## Chạy nhanh (Windows — khuyến nghị)
+
+**Double-click** trong File Explorer (không cần gõ lệnh):
+
+1. **`CAI_DAT.bat`** — cài đủ: thư viện + tải OSM + train shipper (lần đầu)
+2. **`CHAY_DEMO.bat`** — chạy demo nhập đơn
+3. **`plot_map.bat`** — xuất bản đồ HTML zoom
+
+> Nếu dùng **PowerShell**, phải có `.\` trước tên file: `.\run.bat` (không gõ `run.bat` trần).
+
 ## Tính năng
 
 | Thành phần | Mô tả |
@@ -25,6 +35,9 @@ Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận Đố
 Demo_Project/
 ├── config.yaml                 # Khu vực, traffic, weather (một file cấu hình)
 ├── main.py                     # Demo CLI — nhập đơn
+├── CAI_DAT.bat                 # Double-click: cài đặt đầy đủ (lần đầu)
+├── CHAY_DEMO.bat               # Double-click: chạy demo
+├── install.ps1                 # PowerShell: cài đặt đầy đủ
 ├── setup.bat / run.bat         # Windows: cài đặt / chạy demo
 ├── plot_map.bat                # Windows: xuất & mở bản đồ HTML
 ├── requirements.txt
@@ -73,7 +86,7 @@ pip install -r requirements.txt
 **Windows (PowerShell) — khuyến nghị, một lệnh cài đủ:**
 
 ```powershell
-cd C:\Users\ThinkPad\Downloads\Demo_Project-main   # đổi đường dẫn nếu clone ở chỗ khác
+cd Demo_Project   # hoac Demo_Project-main neu tai ZIP
 .\install.ps1
 ```
 

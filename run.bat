@@ -1,9 +1,9 @@
 @echo off
 cd /d "%~dp0"
-if not exist .venv\Scripts\activate.bat (
-  echo Chua cai dat. Chay setup.bat truoc.
+if not exist .venv\Scripts\python.exe (
+  echo Chua cai dat. Double-click CAI_DAT.bat truoc.
   pause
   exit /b 1
 )
-call .venv\Scripts\activate.bat
-python main.py
+set PYTHONIOENCODING=utf-8
+.venv\Scripts\python.exe main.py
