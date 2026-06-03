@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận 1, TP.HCM**: bản đồ **OSMnx**, thời tiết **Open-Meteo**, giao thông giả lập, phân cụm **K-means** (5 shipper) và nhập đơn mới từ bàn phím.
+Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận Đống Đa, Hà Nội**: bản đồ **OSMnx**, thời tiết **Open-Meteo**, giao thông giả lập, phân cụm **K-means** (5 shipper) và nhập đơn mới từ bàn phím.
 
 **Repository:** [github.com/VuXuanSangdz/Demo_Project](https://github.com/VuXuanSangdz/Demo_Project)
 
@@ -70,6 +70,8 @@ pip install -r requirements.txt
 
 ### Bước 1 — Tải bản đồ OSM (một lần, ~1–3 phút)
 
+Nếu bạn đã từng chạy bản Quận 1 TP.HCM, xóa file `.pkl` cũ trong `data/graph/` trước khi tải lại.
+
 ```bash
 python scripts/download_graph.py
 ```
@@ -86,13 +88,13 @@ python scripts/train_clusters.py
 python main.py
 ```
 
-Nhập tọa độ mẫu trong Quận 1:
+Nhập tọa độ mẫu trong Quận Đống Đa:
 
 | Điểm | lat | lon |
 |------|-----|-----|
-| Chợ Bến Thành (gần) | 10.7720 | 106.6980 |
-| Nhà thờ Đức Bà | 10.7798 | 106.6992 |
-| Bưu điện Sài Gòn | 10.7800 | 106.7004 |
+| Văn Miếu — Quốc Tử Giám | 21.0278 | 105.8355 |
+| Hồ Đắc Di | 21.0130 | 105.8260 |
+| Khu vực Ô Chợ Dừa | 21.0190 | 105.8250 |
 
 Trong CLI:
 
@@ -154,7 +156,7 @@ Chỉnh `config.yaml`:
 
 ## Giới hạn demo
 
-- Một khu vực nhỏ (Quận 1) để graph gọn
+- Một khu vực nhỏ (Quận Đống Đa) để graph gọn
 - Giao thông **giả lập**, không phải Google Maps Traffic
 - Gán shipper theo khoảng cách tâm cụm, chưa tối ưu VRP đầy đủ
 

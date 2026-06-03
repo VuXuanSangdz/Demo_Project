@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sinh ~1200 đơn hàng lịch sử ngẫu nhiên trong bbox Quận 1 TP.HCM.
+Sinh ~1200 don hang lich su ngau nhien trong bbox Quan Dong Da, Ha Noi.
 Chạy: python scripts/generate_historical_data.py
 """
 
@@ -9,9 +9,9 @@ import random
 from datetime import datetime, timedelta
 from pathlib import Path
 
-# Bbox Quận 1 + vùng lân cận (tránh vùng sông rộng)
-LAT_MIN, LAT_MAX = 10.758, 10.795
-LON_MIN, LON_MAX = 106.678, 106.715
+# Bbox Quan Dong Da, Ha Noi
+LAT_MIN, LAT_MAX = 21.005, 21.028
+LON_MIN, LON_MAX = 105.818, 105.848
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "historical_orders.csv"

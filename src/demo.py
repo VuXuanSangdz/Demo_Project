@@ -28,7 +28,7 @@ def _prompt_float(label: str) -> float:
         try:
             return float(raw)
         except ValueError:
-            print("    → Nhập số hợp lệ (vd: 10.7769)")
+            print("    → Nhập số hợp lệ (vd: 21.0194)")
 
 
 def _print_shippers(shippers: list[dict]):
@@ -93,7 +93,7 @@ def run_demo():
         w_factor = 1.0
 
     print("\n" + "-" * 60)
-    print("Nhập đơn mới (lat/lon trong khu vực Quận 1 TP.HCM)")
+    print("Nhap don moi (lat/lon trong khu vuc Quan Dong Da, Ha Noi)")
     print("Gõ 'q' để thoát, 'retrain' để huấn luyện lại K-means")
     print("-" * 60)
 

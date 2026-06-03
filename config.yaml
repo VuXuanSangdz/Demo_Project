@@ -1,10 +1,10 @@
-# Khu vực demo: Quận 1 + lân cận, TP.HCM (tránh tải graph quá lớn)
-place_name: "District 1, Ho Chi Minh City, Vietnam"
+# Khu vực demo: Quận Đống Đa, Hà Nội
+place_name: "Dong Da, Hanoi, Vietnam"
 network_type: drive
 
 # Tọa độ trung tâm (Open-Meteo)
-latitude: 10.7769
-longitude: 106.7009
+latitude: 21.0194
+longitude: 105.8342
 
 # K-means: 5 shipper
 n_clusters: 5

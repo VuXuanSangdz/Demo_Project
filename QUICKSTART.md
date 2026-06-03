@@ -11,7 +11,7 @@
 
 | Điểm | lat | lon |
 |------|-----|-----|
-| Chợ Bến Thành | 10.7720 | 106.6980 |
-| Nhà thờ Đức Bà | 10.7798 | 106.6992 |
+| Văn Miếu — Quốc Tử Giám | 21.0278 | 105.8355 |
+| Hồ Đắc Di | 21.0130 | 105.8260 |
 
 Trong CLI: nhập mã đơn → lat → lon → xem shipper + ETA.
