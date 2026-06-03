@@ -1,6 +1,11 @@
-# Smart Delivery Routing Demo
+# Demo Project — Smart Delivery Routing
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận 1, TP.HCM**: bản đồ **OSMnx**, thời tiết **Open-Meteo**, giao thông giả lập, phân cụm **K-means** (5 shipper) và nhập đơn mới từ bàn phím.
+
+**Repository:** [github.com/VuXuanSangdz/Demo_Project](https://github.com/VuXuanSangdz/Demo_Project)
 
 ## Tính năng
 
@@ -48,8 +53,8 @@ smart-delivery-routing/
 ## Cài đặt
 
 ```bash
-git clone https://github.com/<your-user>/smart-delivery-routing.git
-cd smart-delivery-routing
+git clone https://github.com/VuXuanSangdz/Demo_Project.git
+cd Demo_Project
 python -m venv .venv
 
 # Windows

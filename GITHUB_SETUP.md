@@ -15,7 +15,9 @@ Chọn: GitHub.com → HTTPS → Login bằng trình duyệt.
 ```powershell
 cd C:\Users\ThinkPad\smart-delivery-routing
 
-gh repo create smart-delivery-routing --public --source=. --remote=origin --push --description "Demo giao hang: OSMnx, Open-Meteo, K-means 5 shipper, traffic sim"
+git remote add origin https://github.com/VuXuanSangdz/Demo_Project.git
+git branch -M main
+git push -u origin main
 ```
 
 ## 3. (Tuỳ chọn) Đổi tên repo / tổ chức

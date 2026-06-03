@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-imports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: |
+          python -c "
+          from pathlib import Path
+          from src.config_loader import load_config, resolve_path
+          from src.clustering import load_historical_orders
+          cfg = load_config()
+          df = load_historical_orders(resolve_path(cfg['paths']['historical_orders']))
+          assert len(df) >= 1000
+          print('CI OK:', len(df), 'orders')
+          "
