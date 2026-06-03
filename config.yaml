@@ -38,5 +38,4 @@ weather:
 paths:
   historical_orders: data/historical_orders.csv
   shipper_clusters: data/shipper_clusters.json
-  traffic_config: data/traffic_config.json
   graph_cache: data/graph

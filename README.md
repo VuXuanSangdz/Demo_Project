@@ -22,28 +22,31 @@ Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận Đố
 ## Cấu trúc dự án
 
 ```
-smart-delivery-routing/
-├── config.yaml              # Khu vực, tham số traffic/weather
-├── main.py                  # Entry point demo
+Demo_Project/
+├── config.yaml                 # Khu vực, traffic, weather (một file cấu hình)
+├── main.py                     # Demo CLI — nhập đơn
+├── setup.bat / run.bat         # Windows: cài đặt / chạy demo
+├── plot_map.bat                # Windows: xuất & mở bản đồ HTML
 ├── requirements.txt
 ├── data/
-│   ├── historical_orders.csv   # 1200 đơn (có sẵn)
-│   ├── shipper_clusters.json   # 5 shipper (preview / sau train OSM)
-│   ├── traffic_config.json
-│   └── graph/                  # Cache OSMnx (*.pkl, gitignore)
+│   ├── historical_orders.csv   # ~1200 đơn lịch sử
+│   ├── shipper_clusters.json   # 5 shipper (sau train_clusters.py)
+│   └── graph/                    # Cache OSMnx (*.pkl, không đẩy Git)
 ├── scripts/
+│   ├── download_graph.py       # Tải bản đồ OSM
+│   ├── train_clusters.py         # K-means + snap node OSM
+│   ├── plot_route.py           # Xuất bản đồ zoom (HTML)
 │   ├── generate_historical_data.py
-│   ├── generate_shipper_preview.py
-│   ├── download_graph.py
-│   └── train_clusters.py
+│   └── generate_shipper_preview.py  # Preview cluster (không cần OSM)
 ├── src/
-│   ├── map_service.py
-│   ├── weather_service.py
+│   ├── demo.py                 # Logic CLI
+│   ├── map_service.py          # OSMnx + nearest node
+│   ├── map_visualizer.py       # Folium HTML
+│   ├── weather_service.py      # Open-Meteo
 │   ├── traffic_simulator.py
 │   ├── clustering.py
-│   ├── routing.py
-│   └── demo.py
-└── output/                  # delivery_log.jsonl
+│   └── routing.py
+└── output/                     # route_map.html, delivery_log.jsonl
 ```
 
 ## Yêu cầu
@@ -66,6 +69,8 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
+
+**Windows (nhanh):** chạy `setup.bat` → các lệnh bước 1–3 bên dưới → `run.bat`.
 
 ## Chạy nhanh
 
@@ -119,9 +124,9 @@ Trong CLI:
 
 ## Dữ liệu có sẵn
 
-- `data/historical_orders.csv` — 1200 bản ghi (`order_id`, `lat`, `lon`, `created_at`, `weight_kg`, `priority`)
-- `data/shipper_clusters.json` — preview từ K-means; sau `train_clusters.py` có `node_id` OSM thật
-- `data/traffic_config.json` — tham số phạt tuyến và giờ cao điểm
+- `data/historical_orders.csv` — 1200 bản ghi (`order_id`, `lat`, `lon`, …)
+- `data/shipper_clusters.json` — sau `train_clusters.py` có `node_id` OSM thật
+- Tham số giao thông / thời tiết: trong `config.yaml` (mục `traffic`, `weather`)
 
 Tạo lại dữ liệu lịch sử:
 

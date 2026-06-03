@@ -1,9 +1,0 @@
-{
-  "description": "Tham số phạt giao thông giả lập — tuyến lớn và khung giờ cao điểm",
-  "peak_hours": [[7, 9], [17, 19]],
-  "major_road_multiplier": 1.45,
-  "secondary_road_multiplier": 1.25,
-  "peak_multiplier": 1.35,
-  "highway_tags": ["motorway", "trunk", "primary"],
-  "secondary_tags": ["secondary", "tertiary"]
-}

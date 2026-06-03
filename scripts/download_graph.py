@@ -19,7 +19,7 @@ def main():
         resolve_path(cfg["paths"]["graph_cache"]),
     )
     svc.load_or_download(force_download=True)
-    print("Hoàn tất.")
+    print("Done.")
 
 
 if __name__ == "__main__":
