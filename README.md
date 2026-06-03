@@ -70,7 +70,28 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Windows (nhanh):** chạy `setup.bat` → các lệnh bước 1–3 bên dưới → `run.bat`.
+**Windows (PowerShell) — khuyến nghị, một lệnh cài đủ:**
+
+```powershell
+cd C:\Users\ThinkPad\Downloads\Demo_Project-main   # đổi đường dẫn nếu clone ở chỗ khác
+.\install.ps1
+```
+
+Script tự làm: tạo `.venv` → cài `osmnx`, `folium`, … → tải bản đồ OSM → huấn luyện 5 shipper.
+
+> **Lưu ý PowerShell:** phải gõ `.\setup.bat`, `.\run.bat` (có dấu `.\` ở đầu).  
+> Không gõ `setup.bat` trần — sẽ báo lỗi *not recognized*.
+
+**Windows (từng bước):**
+
+```powershell
+.\setup.bat
+.venv\Scripts\python.exe scripts\download_graph.py
+.venv\Scripts\python.exe scripts\train_clusters.py
+.\run.bat
+```
+
+**Windows (nhanh):** sau `install.ps1` → `.\run.bat`.
 
 ## Chạy nhanh
 
