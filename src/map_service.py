@@ -30,7 +30,7 @@ class MapService:
             with open(self.graph_path, "rb") as f:
                 self._graph = pickle.load(f)
         else:
-            print(f"[Map] Đang tải mạng lưới OSM: {self.place_name} ...")
+            print(f"[Map] Downloading OSM network: {self.place_name} ...")
             self._graph = ox.graph_from_place(
                 self.place_name, network_type=self.network_type
             )
@@ -38,7 +38,7 @@ class MapService:
             self._graph = ox.add_edge_travel_times(self._graph)
             with open(self.graph_path, "wb") as f:
                 pickle.dump(self._graph, f)
-            print(f"[Map] Đã lưu cache: {self.graph_path}")
+            print(f"[Map] Saved cache: {self.graph_path}")
 
         self._build_node_index()
         return self._graph

@@ -17,6 +17,7 @@ from src.clustering import (
 )
 from src.config_loader import load_config, resolve_path
 from src.map_service import MapService
+from src.map_visualizer import export_route_map
 from src.routing import shortest_delivery_route
 from src.traffic_simulator import TrafficSimulator
 from src.weather_service import WeatherService
@@ -162,6 +163,20 @@ def run_demo():
         with open(log_file, "a", encoding="utf-8") as f:
             f.write(json.dumps(log, ensure_ascii=False) + "\n")
         print(f"  (đã ghi log → {log_file})")
+
+        map_html = out_dir / "route_map.html"
+        export_route_map(
+            map_svc.graph,
+            result["path_nodes"],
+            shippers,
+            shipper,
+            lat,
+            lon,
+            order_id,
+            result,
+            map_html,
+        )
+        print(f"  (ban do zoom → {map_html})")
 
 
 if __name__ == "__main__":

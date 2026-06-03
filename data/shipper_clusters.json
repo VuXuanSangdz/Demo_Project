@@ -4,51 +4,46 @@
       "shipper_id": 1,
       "cluster_center_lat": 21.009931,
       "cluster_center_lon": 105.826555,
-      "node_id": null,
-      "snap_lat": 21.009931,
-      "snap_lon": 105.826555,
-      "historical_orders": 271,
-      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+      "node_id": 1758633112,
+      "snap_lat": 21.010282,
+      "snap_lon": 105.824936,
+      "historical_orders": 271
     },
     {
       "shipper_id": 2,
       "cluster_center_lat": 21.020938,
       "cluster_center_lon": 105.822769,
-      "node_id": null,
-      "snap_lat": 21.020938,
-      "snap_lon": 105.822769,
-      "historical_orders": 227,
-      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+      "node_id": 4988273681,
+      "snap_lat": 21.020012,
+      "snap_lon": 105.825362,
+      "historical_orders": 227
     },
     {
       "shipper_id": 3,
       "cluster_center_lat": 21.022568,
       "cluster_center_lon": 105.842762,
-      "node_id": null,
-      "snap_lat": 21.022568,
-      "snap_lon": 105.842762,
-      "historical_orders": 198,
-      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+      "node_id": 319490613,
+      "snap_lat": 21.017099,
+      "snap_lon": 105.830946,
+      "historical_orders": 198
     },
     {
       "shipper_id": 4,
       "cluster_center_lat": 21.010344,
       "cluster_center_lon": 105.841356,
-      "node_id": null,
-      "snap_lat": 21.010344,
-      "snap_lon": 105.841356,
-      "historical_orders": 261,
-      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+      "node_id": 104838744,
+      "snap_lat": 21.011512,
+      "snap_lon": 105.830708,
+      "historical_orders": 261
     },
     {
       "shipper_id": 5,
       "cluster_center_lat": 21.021376,
       "cluster_center_lon": 105.832975,
-      "node_id": null,
-      "snap_lat": 21.021376,
-      "snap_lon": 105.832975,
-      "historical_orders": 243,
-      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+      "node_id": 5707161162,
+      "snap_lat": 21.01852,
+      "snap_lon": 105.829235,
+      "historical_orders": 243
     }
   ],
   "n_clusters": 5

@@ -7,3 +7,4 @@ requests>=2.31.0
 pyyaml>=6.0
 matplotlib>=3.8.0
 geopy>=2.4.0
+folium>=0.16.0

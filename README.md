@@ -17,6 +17,7 @@ Demo Python mô phỏng hệ thống giao hàng thông minh tại **Quận Đố
 | **Traffic sim** | Phạt `primary`/`secondary` và khung giờ cao điểm (7–9h, 17–19h) |
 | **K-means** | ~1200 đơn lịch sử → 5 tâm cụm → vị trí shipper |
 | **CLI** | Nhập `lat`/`lon` đơn mới, gán shipper, tính đường ngắn nhất |
+| **Bản đồ HTML** | `scripts/plot_route.py` — zoom/pan trong trình duyệt (Folium) |
 
 ## Cấu trúc dự án
 
@@ -95,6 +96,20 @@ Nhập tọa độ mẫu trong Quận Đống Đa:
 | Văn Miếu — Quốc Tử Giám | 21.0278 | 105.8355 |
 | Hồ Đắc Di | 21.0130 | 105.8260 |
 | Khu vực Ô Chợ Dừa | 21.0190 | 105.8250 |
+
+### Bản đồ tương tác (phóng to / thu nhỏ)
+
+```bash
+python scripts/plot_route.py --open
+```
+
+Tạo `output/route_map.html` — mở bằng Chrome/Edge:
+
+- **Scroll chuột** hoặc nút **+ / −** để zoom
+- Kéo để pan; góc phải có **MiniMap** và **Fullscreen**
+- Đổi lớp nền: OpenStreetMap / CartoDB trong Layer Control
+
+Sau mỗi đơn trong `main.py`, file `output/route_map.html` được cập nhật tự động.
 
 Trong CLI:
 

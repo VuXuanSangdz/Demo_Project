@@ -6,6 +6,7 @@
 2. `python scripts\download_graph.py` — tải bản đồ OSM (cần mạng)
 3. `python scripts\train_clusters.py` — snap 5 shipper lên đường
 4. `run.bat` hoặc `python main.py`
+5. `python scripts\plot_route.py --open` — xem bản đồ zoom được
 
 ## Đơn thử
 
