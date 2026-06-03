@@ -18,5 +18,6 @@ data/graph/*.pkl
 output/*.png
 output/*.html
 !output/.gitkeep
+cache/
 .DS_Store
 Thumbs.db
