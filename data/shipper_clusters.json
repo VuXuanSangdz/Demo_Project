@@ -1,0 +1,55 @@
+{
+  "shippers": [
+    {
+      "shipper_id": 1,
+      "cluster_center_lat": 10.78543,
+      "cluster_center_lon": 106.685713,
+      "node_id": null,
+      "snap_lat": 10.78543,
+      "snap_lon": 106.685713,
+      "historical_orders": 258,
+      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+    },
+    {
+      "shipper_id": 2,
+      "cluster_center_lat": 10.774699,
+      "cluster_center_lon": 106.694983,
+      "node_id": null,
+      "snap_lat": 10.774699,
+      "snap_lon": 106.694983,
+      "historical_orders": 190,
+      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+    },
+    {
+      "shipper_id": 3,
+      "cluster_center_lat": 10.787239,
+      "cluster_center_lon": 106.705214,
+      "node_id": null,
+      "snap_lat": 10.787239,
+      "snap_lon": 106.705214,
+      "historical_orders": 285,
+      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+    },
+    {
+      "shipper_id": 4,
+      "cluster_center_lat": 10.764758,
+      "cluster_center_lon": 106.686336,
+      "node_id": null,
+      "snap_lat": 10.764758,
+      "snap_lon": 106.686336,
+      "historical_orders": 208,
+      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+    },
+    {
+      "shipper_id": 5,
+      "cluster_center_lat": 10.766518,
+      "cluster_center_lon": 106.707211,
+      "node_id": null,
+      "snap_lat": 10.766518,
+      "snap_lon": 106.707211,
+      "historical_orders": 259,
+      "note": "Preview \u2014 chay train_clusters.py sau khi tai graph de snap node OSM"
+    }
+  ],
+  "n_clusters": 5
+}

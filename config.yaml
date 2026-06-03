@@ -1,0 +1,42 @@
+# Khu vực demo: Quận 1 + lân cận, TP.HCM (tránh tải graph quá lớn)
+place_name: "District 1, Ho Chi Minh City, Vietnam"
+network_type: drive
+
+# Tọa độ trung tâm (Open-Meteo)
+latitude: 10.7769
+longitude: 106.7009
+
+# K-means: 5 shipper
+n_clusters: 5
+random_state: 42
+
+# Giao thông giả lập
+traffic:
+  peak_hours:
+    - [7, 9]    # sáng
+    - [17, 19]  # chiều
+  major_road_multiplier: 1.45
+  secondary_road_multiplier: 1.25
+  peak_multiplier: 1.35
+  highway_tags:
+    - motorway
+    - trunk
+    - primary
+  secondary_tags:
+    - secondary
+    - tertiary
+
+# Thời tiết ảnh hưởng tốc độ (hệ số nhân thời gian)
+weather:
+  rain_threshold_mm: 1.0
+  heavy_rain_mm: 10.0
+  rain_factor: 1.15
+  heavy_rain_factor: 1.35
+  wind_threshold_kmh: 30.0
+  wind_factor: 1.08
+
+paths:
+  historical_orders: data/historical_orders.csv
+  shipper_clusters: data/shipper_clusters.json
+  traffic_config: data/traffic_config.json
+  graph_cache: data/graph
